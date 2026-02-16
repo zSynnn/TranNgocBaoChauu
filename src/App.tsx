@@ -1141,8 +1141,8 @@ export default function GrandTreeApp() {
     };
   }, []);
 
-  const [sceneState, setSceneState] = useState<"CHAOS" | "FORMED">("CHAOS");
-  const [targetState, setTargetState] = useState<"CHAOS" | "FORMED">("CHAOS");
+  const [sceneState, setSceneState] = useState<"CHAOS" | "FORMED">("FORMED");
+  const [targetState, setTargetState] = useState<"CHAOS" | "FORMED">("FORMED");
   useEffect(() => {
     const t = setTimeout(() => {
       setSceneState(targetState);
